@@ -1,0 +1,176 @@
+@import url(root.css);
+html,body{
+    overflow: hidden;
+   
+    background-color: var(--Black);
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 110%;
+    height: 10%;
+    
+    background-color: var(--Black);
+    opacity: 0.9;
+    font-size: 3rem;
+    color: var(--White);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items:end;
+
+}
+.window-container{
+    
+  
+    height: calc(100vh - 18px);
+    width: calc(100vw - 18px); /* Assuming scrollbar width is 16px, adjust as needed */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.shake{
+    scale: 0.97;
+}
+.squares-container{
+    height: 70%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.square-row{
+    transition: 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.square{
+    position: relative;
+    height: 60px;
+    width: 58px;
+    border: 2px solid var(--Absent);
+    margin: 3px;
+    color: var(--White);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: transform 0.5s;
+    transition: 0.1s ease;
+
+}
+.boing{
+    scale: 1.1;
+}
+.buttons-container{
+    height: 30%;
+    width: 120vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.answer{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: 0.8s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--Black);
+    font-size: 3rem;
+}
+.buttons-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+
+}
+.button{
+    background-color: var(--Grey);
+    border-radius: 6px;
+    height: 55px;
+    width: 42px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--White);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin: 3px;
+    border: none;
+}
+.end-button{
+    background-color: var(--Grey);
+    border-radius: 6px;
+    height: 55px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--White);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    margin: 3px;
+    border: none;
+}
+
+
+@media only screen and (max-width: 535px) {
+    /* CSS styles for devices with a maximum width of 767px (typically mobile phones) */
+    /* Your styles here */
+    .buttons-container{
+        scale: 0.9;
+    }
+  }
+
+  @media only screen and (max-width: 432px) {
+    /* CSS styles for devices with a maximum width of 767px (typically mobile phones) */
+    /* Your styles here */
+    .buttons-container{
+        scale: 0.85;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    /* CSS styles for devices with a maximum width of 767px (typically mobile phones) */
+    /* Your styles here */
+    .buttons-container{
+        scale: 0.80;
+    }
+    .squares-container{
+        scale: 0.8;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    /* CSS styles for devices with a maximum width of 767px (typically mobile phones) */
+    /* Your styles here */
+    .squares-container{
+        scale: 0.70;
+    }
+    .buttons-container{
+        scale: 0.70;
+    }
+  }
+  
+
